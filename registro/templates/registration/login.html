@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <div id="contenedor">  
+        <div id="contenedorcentrado">
+            <div id="login">
+                {% if form.errors %}
+                <div>
+                    <p style="text-align: center; color: red;">Usuario o Contraseña NO coinciden. Intentalo nuevamente</p>
+                </div>
+                {% endif %}
+                <form id="loginform" method="post">
+                    {% csrf_token %}
+                    <label class="login-user" for="usuario">Ingrese su número documento</label>
+                    {{form.username}}
+                    <label class="login-pin" for="password">Ingrese PIN</label>
+                    {{form.password}}
+                    <hr>
+                    <button type="submit" title="Ingresar" name="Ingresar">ENVIAR</button>
+                </form>              
+            </div>
+            <div id="derecho">
+                <div class="logo-logn">
+                    <img class="logo-login" src="{% static 'img/logo.png' %}" alt="Img/logo.png" />
+                </div>
+                <div>
+                    <p class="text-up">Descarga aquí</p>
+                    <p class="text-down">Los desprendibles de nómina</p>
+                </div>
+
+                <div class="pie-form">
+                    Si tiene problemas envié un correo a <br>info@rstasociados.com.co
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- -------------------------------------------------------------------------------------------------
+    <body>
+    <div id="contenedor">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">
+                    Bienvenidoo
+                </div>
+                {% if form.errors %}
+                <div>
+                    <p>Usuario o Contraseña NO coinciden. Intentalo nuevamente</p>
+                </div>
+                {% endif %}
+                <form id="loginform" method="post">
+                    {% csrf_token %}
+                    <div id="username">
+                        {{form.username}}
+                    </div>
+                    <div id="password">
+                        {{form.password}}
+                    </div>
+                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                </form>
+                
+            </div>
+            <div class="inferior">
+                <a href="#">Volver</a>
+            </div>
+        </div>
+    </div>
+</body> -->
+</html>

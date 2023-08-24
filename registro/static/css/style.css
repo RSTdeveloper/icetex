@@ -1,0 +1,226 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    color: #1b262c;
+    margin: 0;
+    background-color: #5f676900;
+    background-image: url(../img/grupo.jpg);
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row-reverse;
+    background-image: url(../img/agente.jpg);
+    width: 70%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+}
+
+#login {
+    width: 100%;
+    text-align: -webkit-right;
+    padding: 10% 4% 10% 4%;
+    background-color: #ffffff;
+    border-radius: 0px 8px 8px 0px;
+    box-sizing: border-box;
+}
+
+.login-user{
+    display: flex;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+    color:rgba(0, 0, 0, 0.7);
+    margin: 15px 0 10px 0;
+}
+
+.login-pin{
+    display: flex;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+    color:rgba(0, 0, 0, 0.7);
+    margin: 15px 5px 8px 0;
+    flex-direction: row-reverse;
+}
+
+.text-up{
+    font-size: 180%;
+    color: #EE7814; 
+    font-weight: bolder; 
+    margin: 5px 0 0px 0;
+    text-align: left;
+    padding: 24% 0 0 
+}
+
+
+.text-down{
+    font-size: 120%;
+    color: #EE7814; 
+    margin: 5px 0 5px 0;
+    text-align: left;
+    padding: 0% 0 0 
+}
+
+#id_username{
+    font-family: 'Overpass', sans-serif;
+    font-size: 150%;
+    color: #1b262c;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border-color: #80808040;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#id_password{
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1b262c;
+    display: block;
+    width: 20%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+    border-color: #80808040;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#ffffff;
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff7b00;
+}
+
+#login button:hover {
+    background-color: #ff9900;
+    color:#ffffff;
+}
+
+#derecho {
+    display: flex;
+    text-align: left;
+    width: 100%;    
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#ffffff;
+}
+
+.logo-empresa img {
+    width: 60%;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #dfcdc3;
+    
+}
+.pie-form {
+    font-size: 90%;
+    text-align: left;    
+    margin-top: 40%;
+    color: white;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #dfcdc3;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #719192;
+}
+.text-asoci{
+    color: white;margin: 0; 
+    font-size: 15px; 
+    text-align: left;
+}
+
+.logo-login{
+    text-align: left;
+    width: 50%;
+}
+@media all and (max-width: 775px)
+{
+    #contenedorcentrado {
+        flex-direction:column-reverse;
+        width: 80%;
+        background-color: #f3f6f7;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    }
+    
+    #login {
+        margin: 0 auto;
+        border-radius: 0px 0px 8px 8px;
+        padding: 0px 20px 20px 20px;
+    }
+    
+    #derecho {
+        padding:20px 20px 5px 20px;
+        text-align: center;
+    }
+    
+    #login label {
+        text-align: left;
+    }
+    .pie-form {
+        font-size: 60%;
+        text-align: left;    
+        margin-top: 5%;
+        color: white;
+    }
+
+    .text-down{
+        padding: 0;
+    }
+
+    .text-up{
+        padding: 0;
+        margin: 5px 0 0px 0;
+    }
+}
