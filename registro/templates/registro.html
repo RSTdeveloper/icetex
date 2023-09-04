@@ -5,25 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     {% load static %}
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="{% static 'css/registro.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 <body>
-    <h1>INGRESO</h1>
-    <table>
-        <tr>
-            <td>Seleccione el documento a descargar</td>
-            <td>Nombre</td>
-            <td>Usuario</td>
-        </tr>
-        <tr>
-            <td>Juan</td>
-            <td>25</td>
-        </tr>
-        <tr>
-            <td>María</td>
-            <td>30</td>
-        </tr>
-    </table>
+    <div id="contenedor">
+        <div id="contenedorcentrado">
+            <table>
+                <tr>
+                  <th>Seleccione el documento a descargar</th>
+                </tr>
+                <tr class="tr-margen">
+                  <td>
+                    <a href="">
+                      Desprendible de nomina # 1
+                    </a> 
+                  </td>
+                </tr>
+                <tr class="tr-margen"> 
+                  <td>
+                    <a href="#">
+                      Desprendible de nomina  # 2
+                    </a> 
+                  </td>
+                </tr>
+                <tr class="tr-margen">
+                  <td>
+                    <a href="#">
+                      Desprendible de nomina  # 3
+                    </a> 
+                  </td>
+                </tr>
+                <tr class="tr-margen">
+                  <td>
+                    <a href="#">
+                      Desprendible de nomina  # 4
+                    </a> 
+                  </td>
+                </tr>
+              </table>
+        </div>
+    </div>
 </body>
+
+<footer class="prueba-foot">
+  <div class="text-food">
+      <strong>RST Asociados todos los derechos revervados.</strong>
+  </div>
+  <div class="footer-bar">
+    <div class="bar-segment"></div>
+    <div class="bar-segment"></div>
+    <div class="bar-segment"></div>
+    <div class="bar-segment"></div>
+    <div class="bar-segment"></div>
+    <div class="bar-segment"></div>
+  </div>
+</footer>
+
 </html>
