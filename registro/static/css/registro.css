@@ -16,7 +16,7 @@ th{
 
 td {
   text-align: left;
-  padding: 8px 8px 8px 12%;
+  padding: 0px 8px 0px 12%;
   border-bottom: 1px solid #888888;
 }
 
@@ -37,10 +37,35 @@ tr:hover {
   border: 1px solid #888888de;
 }
 
-a{
+
+.btn{
+  background-color: #00143C;
+  color: white;
+  padding: 1% 20px;
+  text-align: center;
   text-decoration: none;
-  color: rgb(59, 59, 59);
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 2px;
+  cursor: pointer;
+  border-radius: 12px;
 }
+
+.btn:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.margin-select{
+  display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 4.5vh;
+}
+
 
 @media (max-width: 640px) {
 
@@ -53,8 +78,20 @@ a{
   }  
   td {
     text-align: left;
-    padding: 6px 6px 6px 12%;
+    padding: 1px 6px 1px 4%;
     border-bottom: 1px solid #888888;
     color: rgb(59, 59, 59);
+  }
+  .btn{
+    background-color: #00143C;
+    color: white;
+    padding: 2% 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 12px;
   }
 }
